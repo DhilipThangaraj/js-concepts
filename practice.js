@@ -15,7 +15,8 @@ require("core-js");
  * @Note - Typeof bigint is bigint.
  */
 
-function bigInt() {
+/**
+ * function bigInt() {
   const a = BigInt(10);
   console.log(a); //10n
   console.log(typeof a); //bigInt
@@ -30,3 +31,41 @@ function bigInt() {
 }
 
 bigInt();
+**/
+
+/**
+ * Example 2
+ * @description - Optional chaining operator (?.)
+ *
+ */
+
+function optionalChainingOperatorOldWay() {
+  const personDetails = {
+    name: {
+      fullName: "Dhilip Kumar",
+    },
+  };
+
+  //How do you do conditional handling for the fullName ?
+
+  if (personDetails && personDetails.name && personDetails.name.fullName) {
+    console.log(personDetails.name.fullName);
+  }
+}
+
+optionalChainingOperatorOldWay();
+
+function optionalChainingOperatorNewWay() {
+  const personDetails = {
+    name: {
+      fullName: "Dhilip Kumar",
+    },
+  };
+
+  //Optional chaining operator
+  if (personDetails?.name?.fullName) {
+    console.log(personDetails.name.fullName);
+  }
+}
+
+optionalChainingOperatorNewWay();
