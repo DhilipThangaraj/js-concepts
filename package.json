@@ -1,0 +1,23 @@
+{
+  "name": "js-concepts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "practice.js",
+  "dependencies": {
+    "core-js": "^3.15.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node practice.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DhilipThangaraj/js-concepts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DhilipThangaraj/js-concepts/issues"
+  },
+  "homepage": "https://github.com/DhilipThangaraj/js-concepts#readme"
+}
