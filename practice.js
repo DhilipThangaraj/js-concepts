@@ -39,6 +39,7 @@ bigInt();
  *
  */
 
+/**
 function optionalChainingOperatorOldWay() {
   const personDetails = {
     name: {
@@ -69,3 +70,26 @@ function optionalChainingOperatorNewWay() {
 }
 
 optionalChainingOperatorNewWay();
+**/
+
+/**
+ * Example 3
+ * @description - Nullish coalescing operator (??) - In javascript empty string and 0 considered as nullish
+ * But actually those are still values inorder to handle that this operator has come in the picture.
+ * @Note - empty string with space will be considered as still value in javascript.
+ */
+
+function nullishOperator() {
+  let personDetails = {
+    name: "",
+    age: 0,
+  };
+
+  console.log(personDetails.name || "text"); //Empty string is a value but still output is text.
+  console.log(personDetails.age || "28"); //0 is still a valid value but the output is 28.
+
+  console.log(personDetails.name ?? "text"); //Empty string is a value but still output is text.
+  console.log(personDetails.age ?? "28"); //0 is still a valid value but the output is 28.
+}
+
+nullishOperator();
